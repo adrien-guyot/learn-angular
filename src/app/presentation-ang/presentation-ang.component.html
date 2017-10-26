@@ -1,0 +1,86 @@
+<h2 style="text-align: center;">Présentation d'Angular</h2>
+Peut-être avez-vous déjà entendu parler d'Angular.
+<br />
+Si vous avez déjà travaillé avec AngularJS (Angular version 1), on pourrait penser qu’Angular (2, 4 et les prochaines versions)
+en est une évolution.
+<br /> Il n'en est rien.
+<br />
+<h3>
+  D'AngularJS à Angular</h3>
+<br /> Lorsque AngularJS a été créé, il n'était pas destiné à l'origine aux développeurs. Il s'agissait d'un outil destiné aux
+concepteurs qui devaient rapidement créer des formulaires HTML persistants. Au fil du temps, il a changé pour s'adapter à
+une variété de scénarios et les développeurs l'ont pris en main et l'ont utilisé pour construire des applications de plus
+en plus complexes.
+<br />
+<br /> L'équipe d'Angular 1.x a travaillé dur au fil des années pour apporter des changements incrémentiels à la conception, lui
+permettant de continuer à être pertinent au fur et à mesure que les besoins des applications web modernes ont changé.
+<br
+/>
+<br /> Cependant, il y a des limites aux améliorations qui peuvent être faites, en raison des hypothèses qui ont été faites dans
+le cadre de la conception originale. Un certain nombre de ces limites concernent des problèmes de performance résultant de
+l'infrastructure de liaison et de modélisation. Afin de résoudre ces problèmes, de nouvelles stratégies furent nécessaires,
+d'où l'arrivée de la nouvelle mouture d'Angular.
+<br />
+<br />
+<h3>
+  Angular nouvelle version</h3>
+La réponse de l'équipe Angular à ces problèmes fut donc une nouvelle version: Angular 2.0 (qui est devenu par la suite :
+Angular).
+<br /> Il s'agit essentiellement d'une réinterprétation d'AngularJS pour le web moderne, en tenant compte de tout ce qui a été
+appris au cours de ces dernières années.
+<br />
+<br /> Nous avons donc affaire à un nouveau framework, composé d'un ensemble de composants (web components) que l'on peut exporter/importer,
+et utiliser une logique de service pour distribuer les classes.
+<br />
+<br /> Pour rappel, les Web Components font généralement référence à une collection de quatre spécifications W3C :
+<br />
+<ul>
+  <li>Custom Elements - Active l'extension HTML via des balises personnalisées.</li>
+  <li>HTML Imports -&nbsp;Permet l'empaquetage de diverses ressources (HTML, CSS, JS, etc.).</li>
+  <li>Template Element -&nbsp;Permet l'inclusion de HTML inerte dans un document.</li>
+  <li>Shadow DOM -&nbsp;Active l'encapsulation de DOM et CSS.</li>
+</ul>
+<br /> Le framework Angular se compose de plusieurs bibliothèques, dont certaines sont centrales et d'autres facultatives.
+<br />
+<br /> Pour écrire des applications Angular, on créera donc des templates HTML avec un balisage spécifique, en écrivant des classes
+(qui seront nos components) pour gérer ces templates, en ajoutant la logique de l'application dans les services, et en encapsulant
+les components et&nbsp; les services dans des modules spécifiques.
+<br />
+<br /> Ensuite, il suffit de lancer notre application Angular via le module racine. Angular prend le relais, présentant le contenu
+de notre application dans un navigateur et répondant aux interactions de l'utilisateur selon les instructions que nous avons
+fournies.
+<br />
+<br /> Parce qu'un petit schéma vaut toujour mieux qu'un long discours...
+<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="https://2.bp.blogspot.com/-b8lsvoRG_eU/WfDM8hwJxfI/AAAAAAAABoI/GJXvTNBw7KgZCJGIqjfzTnPHwRJxF6mhQCLcBGAs/s1600/architecture-angular.png"
+    imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+    <img border="0" data-original-height="356" data-original-width="700" src="https://2.bp.blogspot.com/-b8lsvoRG_eU/WfDM8hwJxfI/AAAAAAAABoI/GJXvTNBw7KgZCJGIqjfzTnPHwRJxF6mhQCLcBGAs/s1600/architecture-angular.png"
+    />
+  </a>
+</div>
+<br />
+<br /> Pour mieux comprendre ce schéma, voici quelques petites explications des notions au coeur d'Angular :
+<br />
+<ul>
+  <li>
+    <b>Directives </b>: metadata parente des classes Component, Structural et Attribute</li>
+  <li>
+    <b>Component </b>: ils permettent de créer des éléments HTML et de leur attribuer un comportement. C’est une classe TypeScript
+    avec des metadata.
+    <br />Les components peuvent appeler des templates. Les templates, les metadatas et le component, ensemble, décrivent la vue.</li>
+  <li>
+    <b>Structural </b>(ex : ngfor) : directive qui altère le DOM en supprimant, modifiant ou ajoutant des éléments du DOM</li>
+  <li>
+    <b>Attribute </b>(ex : ngModel) : directive qui altère l’apparence ou le comportement d’un élément existant</li>
+  <li>
+    <b>DataBinding </b>: moyen utilisé pour permettre la communication entre le template et la partie logique du component (la
+    classe typescript)</li>
+  <li>
+    <b>Pipe </b>: permettent d’appliquer une transformation sur les données avant de les afficher dans la vue.</li>
+</ul>
+<br />
+<br />
+<br />
